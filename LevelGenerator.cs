@@ -199,8 +199,6 @@ public class LevelGenerator : MonoBehaviour
     public void IncreaseBossKills()
     {
         playerData.bossKills++;
-
-        // wrong : you can kill final boss even though you havent killed all the bosses 
         PlayerData.s_hasKilledFinalBoss = playerData.bossKills == 5; // hardcoded amount of runs before final run (stronger boss but gives all missing codes); 
     }
 
